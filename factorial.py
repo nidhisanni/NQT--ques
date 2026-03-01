@@ -1,11 +1,22 @@
-a = int(input(''))
-fact = 1
-if a==0:
-    print(1)
-elif a < 1:
-    print('invalid output')
-else:
-    for i in range(1, a+1):
-        fact = fact * i
+# a = int(input(''))
+# fact = 1
+# if a==0:
+#     print(1)
+# elif a < 1:
+#     print('invalid output')
+# else:
+#     for i in range(1, a+1):
+#         fact = fact * i
     
-    print(fact)
+#     print(fact)
+    
+    
+    
+def factorial(n):
+    fact = 1
+    for i in range(1, n+1):
+        fact *= i
+    return fact
+
+n= int(input())
+print(factorial(n))
